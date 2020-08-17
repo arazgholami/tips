@@ -1,0 +1,238 @@
+/*
+Theme Name: CSSTips v1.0
+Theme URI: http://arazgholami.com/themes/csstips
+Author: Araz Gholami
+Author URI: http://arazgholami.com/
+Description: CSSTips theme for CSSTips website
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, fluid-layout, responsive-layout, editor-style, full-width-template, rtl-language-support
+Text Domain: CSSTips
+*/
+/* ==========================================================================
+   Some important properties
+   ========================================================================== */
+/* Selection Custom Color */
+::selection {
+  background: #00877d;
+  color: #fff; }
+
+::-moz-selection {
+  background: #00877d;
+  color: #fff; }
+
+/* Adding Custom Fonts */
+@font-face {
+  font-family: 'Mitra';
+  src: url("fonts/mitra.eot");
+  src: url("fonts/mitra.eot") format("embedded-opentype"), url("fonts/mitra.woff") format("woff"), url("fonts/mitra.ttf") format("truetype"), url("fonts/mitra.svg#Mitra") format("svg"); }
+
+/* Base rtl properties */
+body {
+  direction: rtl;
+  text-align: right; }
+
+h1, p {
+  font-family: mitra; }
+
+/* ==========================================================================
+   CSSTips styles
+   ========================================================================== 
+*/
+body {
+  background: #e5e5e5;
+  cursor: default; }
+
+h1 span {
+  color: #00877d; }
+
+#header {
+  width: 700px;
+  text-align: center; }
+  #header p {
+    margin: 0 auto; }
+
+#subscription {
+  margin: 20px 0 0 0;
+  width: 350px; }
+
+#subscription input {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-left: 0px solid #ccc;
+  font-family: mitra; }
+
+#subscription button {
+  float: left;
+  margin: -1px 0 0 0;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  background: #00877d;
+  color: #fff; }
+
+#socials {
+  margin: 15px 0 0 0; }
+
+#socials button {
+  margin: 0 5px 0 0;
+  float: left;
+  background: #eeeeee; }
+
+#sc-fb:hover, #sc-tw:hover, #sc-plus:hover {
+  color: white; }
+
+#sc-fb:hover {
+  background: #46629b; }
+
+#sc-tw:hover {
+  background: #34a0c7; }
+
+#sc-plus:hover {
+  background: #da4836; }
+
+#searchbox {
+  margin: 30px auto -10px auto;
+  width: 500px;
+  text-align: left; }
+
+#searchbox input {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-left: 0px solid #ccc;
+  font-family: mitra; }
+
+#searchbox button {
+  float: left;
+  margin: -1px 0 0 0;
+  padding-bottom: 11px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc; }
+
+/* Contents */
+#content {
+  min-height: 275px; }
+
+article {
+  margin: 50px auto; }
+  article #title {
+    text-align: center;
+    float: right; }
+    article #title h2 {
+      background: white;
+      padding: 20px;
+      font-size: 3em;
+      width: 80px;
+      text-align: center;
+      border-radius: 50px;
+      margin: 0 auto 0 auto; }
+    article #title #share a {
+      margin: 10px 0;
+      background: #eeeeee; }
+    article #title #sc-fb:hover {
+      background: #46629b; }
+    article #title #sc-tw:hover {
+      background: #34a0c7; }
+    article #title #sc-plus:hover {
+      background: #da4836; }
+  article #context {
+    position: relative;
+    float: left; }
+    article #context p {
+      font: normal 1.4em mitra; }
+    article #context ul {
+      position: relative;
+      float: left;
+      list-style-type: none;
+      margin: 5px 0 0 15px;
+      opacity: 0.3;
+      transition: opacity 0.4s; }
+      article #context ul .fa {
+        padding: 8px 10px 8px 8px;
+        font-size: 1.2em; }
+      article #context ul li {
+        position: relative;
+        float: left;
+        background: #fff;
+        border-radius: 5px;
+        margin: 0 4px 4px 0; }
+      article #context ul li span a {
+        margin: 0 5px 0 5px;
+        font: normal 0.8em tahoma; }
+    article #context ul:hover, article #context ul:focus {
+      opacity: 1.0; }
+
+#no-post {
+  text-align: center;
+  margin: 50px auto; }
+  #no-post h2 {
+    font-family: mitra; }
+    #no-post h2 span {
+      font: normal 0.7em mitra; }
+
+#footer {
+  background: #000;
+  color: #fff;
+  font: normal 1.2em mitra;
+  padding: 20px 0; }
+  #footer a {
+    color: #58c3bb; }
+  #footer a:hover {
+    color: #00877d; }
+  #footer div div {
+    margin: 10px auto; }
+  #footer div div div h3 {
+    margin: -16px 0 -10px 0; }
+
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=text]:active {
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-left: 0px solid #ccc; }
+
+button:hover,
+button:focus,
+button:active {
+  shape-outside: none;
+  box-shadow: none;
+  border: 1px solid #ccc; }
+
+.btn:focus,
+.btn:active {
+  outline: none; }
+
+a {
+  color: #00877d;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover, a:focus {
+  color: #58c3bb;
+  text-decoration: none; }
+
+/* Responsive Properties */
+@media only screen and (max-width: 992px) {
+  #title {
+    float: none;
+    width: 100%; } }
+@media only screen and (max-width: 760px) {
+  #header {
+    width: 100%; }
+
+  #searchbox {
+    width: 90%; }
+
+  #searchbox input {
+    width: 70%; }
+
+  #subscription {
+    margin: 20px auto 0 auto;
+    width: 60%;
+    text-align: center; }
+
+  #subscription input {
+    width: 80%; }
+
+  #socials {
+    display: none; } }
